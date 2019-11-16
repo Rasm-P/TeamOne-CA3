@@ -44,7 +44,7 @@ import javax.ws.rs.core.UriInfo;
             ),
             @Server(
                     description = "Server API",
-                    url = "https://www.barfodpraetorius.dk/teamone-ca3"
+                    url = "https://www.helvedesmaskine.dk/TeamOne-CA3"
             )
 
         }
