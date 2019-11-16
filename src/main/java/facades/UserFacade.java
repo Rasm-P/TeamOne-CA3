@@ -1,5 +1,6 @@
 package facades;
 
+import entities.Role;
 import entities.User;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -8,21 +9,21 @@ import errorhandling.AuthenticationException;
 /**
  * @author lam@cphbusiness.dk
  */
-public class UserFacade extends AbstractFacade<User>{
-  
+public class UserFacade extends AbstractFacade<User> {
+
     private static EntityManagerFactory emf;
     private static UserFacade instance;
-    
+
     public UserFacade() {
         super(User.class);
     }
-    
+
     /**
-     * 
+     *
      * @param _emf
      * @return the instance of this facade.
      */
-    public static UserFacade getUserFacade (EntityManagerFactory _emf) {
+    public static UserFacade getUserFacade(EntityManagerFactory _emf) {
         if (instance == null) {
             emf = _emf;
             instance = new UserFacade();
@@ -30,7 +31,11 @@ public class UserFacade extends AbstractFacade<User>{
         return instance;
     }
 
-    
+    @Override
+    protected EntityManager getEntityManager() {
+        return emf.createEntityManager();
+    }
+
     public User getVeryfiedUser(String username, String password) throws AuthenticationException {
         EntityManager em = getEntityManager();
         User user;
@@ -46,8 +51,18 @@ public class UserFacade extends AbstractFacade<User>{
     }
 
     @Override
-    protected EntityManager getEntityManager() {
-        return emf.createEntityManager();
+    public void create(User user) {
+        EntityManager em = emf.createEntityManager();
+        try {
+            em.getTransaction().begin();
+            Role userRole = new Role("user");
+            user.addRole(userRole);
+            //em.persist(userRole);
+            em.persist(user);
+            em.getTransaction().commit();
+        } finally {
+            em.close();
+        }
     }
 
 }
