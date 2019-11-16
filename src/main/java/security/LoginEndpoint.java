@@ -37,7 +37,7 @@ import utils.EMF_Creator;
 
 @OpenAPIDefinition(
         info = @Info(
-                title = "teamone-ca3",
+                title = "TeamOne-CA3",
                 version = "0.1",
                 description = "Backend of the CA3 project"
         ),
@@ -47,11 +47,11 @@ import utils.EMF_Creator;
         servers = {
             @Server(
                     description = "For Local host testing",
-                    url = "http://localhost:8080/teamone-ca3"
+                    url = "http://localhost:8080/TeamOne-CA3"
             ),
             @Server(
                     description = "Server API",
-                    url = "https://www.helvedesmaskine.dk/teamone-ca3"
+                    url = "https://www.helvedesmaskine.dk/TeamOne-CA3"
             )
 
         }

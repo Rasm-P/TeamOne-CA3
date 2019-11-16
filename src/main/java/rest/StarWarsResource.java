@@ -30,7 +30,7 @@ import javax.ws.rs.core.UriInfo;
 
 @OpenAPIDefinition(
         info = @Info(
-                title = "teamone-ca3",
+                title = "TeamOne-CA3",
                 version = "0.1",
                 description = "Backend of the CA3 project"
         ),
