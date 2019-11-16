@@ -51,7 +51,7 @@ import utils.EMF_Creator;
             ),
             @Server(
                     description = "Server API",
-                    url = "https://www.helvedesmaskine.dk/teamone-ca3"
+                    url = "https://www.barfodpraetorius.dk/teamone-ca3"
             )
 
         }
