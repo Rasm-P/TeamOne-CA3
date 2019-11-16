@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/wormple12/TeamOne-CA3.svg?branch=master)](https://travis-ci.org/wormple12/TeamOne-CA3)
+[![Build Status](https://travis-ci.org/Rasm-P/TeamOne-CA3.svg?branch=master)](https://travis-ci.org/Rasm-P/TeamOne-CA3)
 
 3. Semester, CA3
 
