@@ -6,7 +6,7 @@ API:
 =====================
 Back end deployed at: https://barfodpraetorius.dk/TeamOne-CA3/
 
-Front end deployed at http://teamone-ca3-front-simon.surge.sh/
+Front end deployed at http://teamone-ca3-front-rasmus.surge.sh/#/
 
 Open API: https://barfodpraetorius.dk/TeamOne-CA3/openapi/
 
