@@ -4,11 +4,11 @@
 
 API:
 =====================
-Back end deployed at: https://www.helvedesmaskine.dk/teamone-ca2-back/
+Back end deployed at: https://barfodpraetorius.dk/TeamOne-CA3/
 
 Front end deployed at https://ca2-teamone-frontend.surge.sh/
 
-Open API: https://helvedesmaskine.dk/teamone-ca2-back/openapi/
+Open API: https://barfodpraetorius.dk/TeamOne-CA3/openapi/
 
 Group: Team One
 =======================
@@ -62,7 +62,7 @@ To set up the project backend to work on your machine and pipeline, change the f
 - CorsResponseFilter, Access-Control-Allow-Origin: Your frontend deployment
 
 For instructions on how to use the API see the following openapi decription:
-https://helvedesmaskine.dk/teamone-ca2-back/openapi/
+https://barfodpraetorius.dk/TeamOne-CA3/openapi/
 
 This project contains two major documentation files: 
  - [First time users - getting started](README_proof_of_concept.md)

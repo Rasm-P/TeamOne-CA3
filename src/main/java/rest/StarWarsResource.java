@@ -40,11 +40,11 @@ import javax.ws.rs.core.UriInfo;
         servers = {
             @Server(
                     description = "For Local host testing",
-                    url = "http://localhost:8080/teamone-ca3"
+                    url = "http://localhost:8080/Teamone-ca3"
             ),
             @Server(
                     description = "Server API",
-                    url = "https://www.helvedesmaskine.dk/teamone-ca3"
+                    url = "https://barfodpraetorius.dk/TeamOne-CA3"
             )
 
         }
