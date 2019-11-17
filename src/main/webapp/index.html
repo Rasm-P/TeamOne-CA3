@@ -5,22 +5,27 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body style="font-family: sans-serif;padding:8px;font-size: large">
-        <h2>Start Code for JPA and JAX-RS projects with support for OpenAPI Documentation</h2>
+        <h2>Description on how we used the start code</h2>
         <div>
             <a href="openapi">API-Documentation</a>
-            <p>Observe that the link above does NOT (yet) document your code, but the (in)famous Pet-store</p>
-            <p>In your browser test these two endpoints:</p>
-            <ul>
-                <li><code>/api/openapi.json</code></li>
-                <li><code>/api/openapi.yaml</code></li>
-            </ul>
-            <p>What is returned by these two endpoints (MIME type, and what does the content represent) </p>
-            <h4>TODO:</h4>
-            <ul>
-                <li>Open the file <em>index.html</em> in the folder <em>openapi</em></li>
-                <li>Locate the URL that points to the external petstore-API and replace with a (relative) link to one of the two endpoints given above</li>
-                <li>Refresh your browser (CTRL-F5) and click the link to the <em>API-Documentation</em> again</li>
-                <li>Verify that you get documentation for your own end-points</li>
+            <p>Vi brugte startkoden som udgangspunkt til vores login JWT token system med user entities og roller samt error 
+                handeling og CORS filter. Oven på dette tilføjede vi yderligere Eitities og nogle facader hvor vi med brug af 
+                threads kunne fetche data fra de 5 brugte endpoints. Vi tilføjede nogle yderligere rolle begrænsede Endpoints 
+                i for af vores starwars API og gjorde i sammenhæng med dette også brug af openapi. Ud over brugerbegrænsning 
+                gjorde vi også brug af JPA og ændrede vores User entities til at kunne hashse deres password med et genereret 
+                salt. Vi tilfælde yderligere i forbindelse med deployment også et endpoint og tilhørende facade metoder til 
+                en createUser funktion så man også kunne oprette en bruger.</p>
+            
+            <p>I forbindelse med frontend gjorde vi brug af routing til at kunne navigere mellem de forskellige view, samt et 
+                loginsystem fra et af ugens tidligere opgaver. Med dette kom også brugen af de udleverede JWT tokens som vi 
+                kunne bruge til brugeridentifikation samt at udlevere og reagere på brugerdefinerede indhold i henhold til 
+                rolle og navn i token payload. Brugen af denne valide token var også vigtig for at vide om en bruger var logget 
+                ud eller havde adgang og hvilken adgang til havde indhold som de havde. Vi brugte blandt andet dette til at vide 
+                en specifik bruger besked til den individuelle brugers rolle da de logger ind, samt til at give begge brugerne 
+                adgang til at de vores starwars end point som blev fremvist i form af nogle tables i længder defineret af det 
+                fetchede indhold fra vores starwars API.</p>
+
+
             </ul>
         </div>
     </body>
