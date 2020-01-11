@@ -6,15 +6,15 @@ API:
 =====================
 Back end deployed at: https://barfodpraetorius.dk/TeamOne-CA3/
 
-Front end deployed at http://teamone-ca3-front-rasmus.surge.sh/#/
+Front end deployed at https://teamone-ca3-front-rasmus.surge.sh
 
 Open API: https://barfodpraetorius.dk/TeamOne-CA3/openapi/
 
 Group: Team One
 =======================
-Lukas Bjørnvad
+Lukas BjÃ¸rnvad
 
-Rasmus Prætorius
+Rasmus PrÃ¦torius
 https://github.com/Rasm-P
 
 Simon Norup
